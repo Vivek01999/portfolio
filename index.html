@@ -3,190 +3,256 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Vivek Kukkapalli</title>
-	<!---custom css link---->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
-	<link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
-<body>
-	<!------Header Section------>
-	<header>
-		<ul class="navlist">
-			<li><a href="#home">Home</a></li>
-			<li><a href="#about">About Me</a></li>
-			<li><a href="#education">Education</a></li>
-			<li><a href="#experience">Experience</a></li>
-			<li><a href="#projects">Projects</a></li>
-			<li><a href="#publications">Publications</a></li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
-		<div class="bx bx-menu" id="menu-icon"></div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Vivek Kukkapalli</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+    <style>
+        /* Custom styles for mobile-friendly layout */
+        @media (max-width: 768px) {
+            body {
+                padding-top: 80px; /* To create space for the fixed header */
+            }
+
+            header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+            }
+
+            .container {
+                max-width: 100%;
+            }
+
+            .w-96 {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .w-full {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+
+<body class="bg-gray-100">
+	<!-- Header Section -->
+	<header class="bg-white shadow-md">
+		<div class="container mx-auto">
+			<ul class="flex justify-center items-center space-x-6 py-4">
+				<li><a href="#home" class="text-gray-800 hover:text-blue-500">Home</a></li>
+				<li><a href="#about" class="text-gray-800 hover:text-blue-500">About Me</a></li>
+				<li><a href="#education" class="text-gray-800 hover:text-blue-500">Education</a></li>
+				<li><a href="#experience" class="text-gray-800 hover:text-blue-500">Experience</a></li>
+				<li><a href="#projects" class="text-gray-800 hover:text-blue-500">Projects</a></li>
+				<li><a href="#publications" class="text-gray-800 hover:text-blue-500">Publications</a></li>
+				<li><a href="#contact" class="text-gray-800 hover:text-blue-500">Contact</a></li>
+			</ul>
+		</div>
 	</header>
 
-	<!---------Home Section--------------->
-	<section class="home" id="home" tabindex="0">
-		<div class="home-text">
-			<div class="slide">
-				<span class="one">Hello</span>
-				<span class="two">I'm</span>
+	<!-- Home Section -->
+	<section class="bg-blue-500 text-white py-32" id="home">
+		<div class="container mx-auto text-center">
+			<div class="slide mb-4">
+				<h2 class="text-3xl">Hello <span class="font-bold">I'm</span></h2>
 			</div>
-			<h1>Vivek Kukkapalli</h1>
-			<h3>Full Stack <span>Devloper!</span></h3>
-		</div>
-	</section>
-
-	<!---------about Section --------------->
-	<section class="about" id="about" tabindex="1">
-		<div class="about-img">
-			<img src="img/Vivek.jpg">
-		</div>
-
-		<div class="about-text">
-			<h2><span>About Me</span></h2>
-			<p></p>
-			<p>Highly motivated and enthusiastic master's graduate with a passion for full-stack development. Possessing a solid foundation in programming concepts, web development technologies, and database management, with experience in both front-end and back-end development. Seeking a challenging full-stack development role that allows me to contribute to innovative projects and expand my skills.</p>
-			<a href="docs/Vivek.pdf" target="_blank" class="btn" download>Download CV</a>
-			
-		</div>
-	</section>
-
-	<!-----------education Section-------------->
-	<section class="education" id="education" tabindex="2">
-	<div class="main-text">
-		<h2><span>Education</span></h2>
-	</div>
-	<br>
-	<div class="education-content">
-		<div class="box">
-			<h3>Master's</h3>
-			<h3>University of Houston - Clear Lake</h3>
-			<p>GPA: 3.758/4.0</p>
-		</div>
-		<br>
-		<div class="box">
-			<h3>UG</h3>
-			<h3>Amrita Viswa Vidyapeetham</h3>
-			<p>GPA: 7.66/10.0</p>
-		</div>
-
-	</div>
-
-</section>
-
-	<!-----------Experience Section-------------->
-	<section class="experience" id="experience" tabindex="3">
-		<div class="main-text">
-			<h2><span>Experience</span></h2>
-		</div>
-		<br><br>
-		<h1><span>NCWS Student Tech IV</span></h1>
-		<h2> University of Houston - Clear Lake</h2>
-		<br>
-		<p> -> Performed technical operations in the computer lab.</p>
-		<p> -> Working on software updates and helping the students, faculty with technical issues.</p>
-		<br>
-		<h1><span>IoT Engineer</span></h1>
-		<h2> IBM Intern</h2>
-		<br>
-		<p> -> Worked on integrating the hardware devices with cloud and using the data to control devices.</p>
-		<p> -> Developed a smart home automation system where all the appliances can be operated using audio.</p>
-		<p> -> Used the IBM Cloud, IoT Platform to assist in designing and implementing IoT hardware and sensors.</p>
-		<p> -> To guarantee the security of sensitive data, best practices for IoT security and data privacy were learned and put into practice.</p>
-	
-	</section>
-
-
-
-<!-----------Projects Section-------------->
-<section class="projects" id="projects" tabindex="5">
-	<div class="main-text">
-		<h2><span>Projects</span></h2>
-	</div>
-	<br><br>
-	<h1><span>Full Stack Web Application for Consortium Blockchain</span></h1>
-	<h3>Tools/Languages Used: HTML, CSS, JS, Angular, NodeJS, Visual Studio Code, PostgreSQL, Shell Scripting and Postman</h3>
-	<br>
-	<p> -> Created initial setup of the blockchain and integrated with the web application.</p>
-	<p> -> Hosted the AWS instance for Postgres database and maintained it throughout the project development process.</p>
-	<p> -> Built middleware application API design Flow which helped in interacting with the backend blockchain endpoint.</p>
-	<p> -> Created connections between frontend, middleware, backend applications thereby creating a smooth flow from end-to- end application.</p>
-	<p> -> Designed and architected the Database for the storage of user management information at Postgres and File system in middleware and backend, respectively.</p>
-	<p> -> Refactored the frontend application to adjust the needs of user management which helped in generating a faster and responsive UI.</p>
-	<p> -> Developed a JavaScript file that can help to run the application using API’s and CLI. </p>
-
-	<br><br>
-	<h1><span>The Cook Book</span></h1>
-	<h3>Tools/Languages Used: HTML, CSS, JS, Angular, NodeJS, and Firebase</h3>
-	<br>
-	<p> -> Recipe book is a web application where users can share their recipes.</p>
-	<p> -> User Authentication has been done using JWT.</p>
-	<p> -> Created a search feature so users could look up recipes using keywords or ingredients.</p>
-	<p> -> User’s haves the options to Add, Edit, Delete, and favorite the recipes. </p>
-
-	<br><br>
-	<h1><span>Computer Aided Mass Detection in Mammograms</span></h1>
-	<h3>Tools/Languages: Python, Anaconda</h3>
-	<br>
-	<p> -> Designed a CAD system that automatically classifies the given mammogram as a Normal or Abnormal.</p>
-	<p> -> Used machine learning algorithms and Python to train and test the efficiency. </p>
-</section>
-<!-----------publications Section--------------->
-<section class="publications" id="publications" tabindex="6">
-	<div class="main-text">
-		<h2><span>Publications</span></h2>
-	</div>
-	<div class="publications-content">
-		<div class="row">
-			<img src="img/mammogram.png" >
-			<div class="layer">
-				<a href="https://ieeexplore.ieee.org/document/9465537" target="_blank"> <i class='bx bx-link-external'></i></a>
+			<h1 class="text-5xl font-bold mb-2">Vivek Kukkapalli</h1>
+			<div class="typing-text">
+				<h3 class="text-xl">Full Stack <span class="font-bold">Developer</span></h3>
 			</div>
-			<br>
-			<h5>Computer Aided Mass Detection in Mammograms</h5>
 		</div>
-	</div>
+	</section>
 
-</section>
-<!------------------Contact section------------>
-<section class="contact" id="contact" tabindex="7">
-	<div class="contact-text">
-		<h2><span>Contact</span></h2>
-		<p> </p>
-		<p>Please feel free to contact me.</p>
-		<div class="list">
-			<li><a href="#">+1 (512)-300-7926</a></li>
-			<li><a href="#">kukkapallyvivek2828@gmail.com</a></li>
+	<!-- About Section -->
+	<section class="py-16" id="about">
+		<div class="container mx-auto flex items-center space-x-8">
+			<div class="w-1/2">
+				<img src="img/Vivek.jpg" alt="Vivek" class="rounded-full w-96 mx-auto">
+			</div>
+			<div class="w-1/2">
+				<h2 class="text-4xl font-bold mb-4">About Me</h2>
+				<p class="text-xl">Highly motivated and enthusiastic master's graduate with a passion for full-stack development. Possessing a solid foundation in programming concepts, web development technologies, and database management, with experience in both front-end and back-end development. Seeking a challenging full-stack development role that allows me to contribute to innovative projects and expand my skills.</p>
+				<br>
+                <a href="docs/Vivek.pdf" target="_blank" class="btn bg-blue-500 text-white hover:bg-blue-600 mt-4 px-8 py-2 rounded-md">Download CV</a>
+			</div>
 		</div>
+	</section>
 
-		<div class="contact-icons">
-			<a href="https://github.com/Vivek01999/" target="_blank"><i class='bx bxl-github'></i></a>
-			<a href="https://linkedin.com/in/vivek-kukkapalli/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
-			<!-- <a href="#"><i class='bx bxl-instagram-alt' ></i></a> -->
+	<!-- Education Section -->
+	<section class="bg-gray-100 py-16" id="education">
+		<div class="container mx-auto">
+			<div class="text-center mb-6">
+				<h2 class="text-4xl font-bold">Education</h2>
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+				<div class="bg-white p-4 shadow-md">
+					<h3 class="text-xl font-bold">Master's</h3>
+					<h3 class="font-bold">University of Houston - Clear Lake</h3>
+					<p>GPA: 3.758/4.0</p>
+				</div>
+				<div class="bg-white p-4 shadow-md">
+					<h3 class="text-xl font-bold">UG</h3>
+					<h3 class="font-bold">Amrita Viswa Vidyapeetham</h3>
+					<p>GPA: 7.66/10.0</p>
+				</div>
+			</div>
 		</div>
+	</section>
 
-	</div>
-	<div class="contact-form">
+	<!-- Experience Section -->
+	<section class="py-16" id="experience">
+		<div class="container mx-auto">
+			<div class="text-center mb-12">
+				<h2 class="text-4xl font-bold text-gray-800">Experience</h2>
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+				<div class="bg-white p-8 shadow-md rounded-md">
+					<h1 class="text-2xl font-bold mb-4">NCWS Student Tech IV</h1>
+					<h2 class="text-lg font-bold">University of Houston - Clear Lake</h2>
+					<ul class="list-disc list-inside mt-4">
+						<li>Performed technical operations in the computer lab.</li>
+						<li>Assisted students and faculty with software updates and technical issues.</li>
+					</ul>
+				</div>
+				<div class="bg-white p-8 shadow-md rounded-md">
+					<h1 class="text-2xl font-bold mb-4">IoT Engineer</h1>
+					<h2 class="text-lg font-bold">IBM Intern</h2>
+					<ul class="list-disc list-inside mt-4">
+						<li>Developed a smart home automation system, enabling voice-controlled operation of appliances.</li>
+						<li>Integrated hardware devices with cloud services to control and monitor IoT devices.</li>
+						<li>Designed and implemented IoT hardware and sensors using IBM Cloud and IoT Platform.</li>
+						<li>Ensured data security and privacy by following best practices for IoT security.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Projects Section -->
+	<section class="bg-gray-100 py-16" id="projects">
+		<div class="container mx-auto">
+			<div class="text-center mb-12">
+				<h2 class="text-4xl font-bold text-gray-800">Projects</h2>
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+				<div class="bg-white p-8 shadow-md rounded-md">
+					<h1 class="text-2xl font-bold mb-4">Full Stack Web Application for Consortium Blockchain</h1>
+					<h3 class="text-lg font-bold">Tools/Languages Used: HTML, CSS, JS, Angular, NodeJS, Visual Studio Code, PostgreSQL, Shell Scripting, and Postman</h3>
+					<ul class="list-disc list-inside mt-4">
+						<li>Connected with stakeholders and understood the entire project, gathering requirements.</li>
+						<li>Created the initial setup of the blockchain and integrated it with the web application.</li>
+						<li>Hosted the AWS instance for the Postgres database and maintained it throughout the project development process.</li>
+						<li>Established connections between frontend, middleware, and backend applications, ensuring smooth flow.</li>
+						<li>Designed and architected the database for user management, utilizing Postgres and File system in middleware and backend, respectively.</li>
+						<li>Refactored the frontend application to meet the needs of user management, resulting in a faster and responsive UI.</li>
+						<li>Developed a JavaScript file to facilitate running the application using APIs and CLI.</li>
+					</ul>
+				</div>
+				<div class="bg-white p-8 shadow-md rounded-md">
+					<h1 class="text-2xl font-bold mb-4">Recipe Book</h1>
+					<h3 class="text-lg font-bold">Tools/Languages Used: HTML, CSS, JS, Angular, NodeJS, and Firebase</h3>
+					<ul class="list-disc list-inside mt-4">
+						<li>Recipe Book is a web application where users can share their recipes.</li>
+						<li>User Authentication has been implemented using JWT for secure access.</li>
+						<li>Created a search feature to allow users to look up recipes using keywords or ingredients.</li>
+						<li>Users have options to Add, Edit, Delete, and favorite recipes.</li>
+					</ul>
+				</div>
+                <div class="bg-white p-8 shadow-md rounded-md">
+                    <h1 class="text-2xl font-bold">Computer Aided Mass Detection in Mammograms</h1>
+                    <h3 class="text-xl font-bold">Tools/Languages Used: Python, Anaconda</h3>
+                    <ul class="list-disc list-inside">
+                        <li>Designed a CAD system that automatically classifies given mammograms as Normal or Abnormal.</li>
+                        <li>Utilized machine learning algorithms and Python to train and test the models for accurate detection.</li>
+                    </ul>
+                </div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Publications Section -->
+    <section class="py-16" id="publications">
+        <div class="container mx-auto">
+            <div class="text-center mb-6">
+                <h2 class="text-4xl font-bold">Publications</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-4 shadow-md flex items-center">
+                    <img src="img/mammogram.png" alt="Mammogram" class="w-20 h-20 rounded-full mr-4">
+                    <div>
+                        <a href="https://ieeexplore.ieee.org/document/9465537" target="_blank" class="text-blue-500 hover:underline">
+                            <h5 class="text-xl font-bold">Computer Aided Mass Detection in Mammograms</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+	<!-- Contact Section -->
+	<section class="bg-gray-100 py-16" id="contact">
+        <div class="text-center mb-6">
+            <h2 class="text-4xl font-bold">Contact</h2>
+        </div>
+		<div class="container mx-auto flex items-center justify-center">
+			<div class="w-full md:w-1/2 p-8 bg-white shadow-md rounded-md">
+				<div class="space-y-2">
+					<li><a href="#" class="text-blue-500 hover:underline">+1 (512)-300-7926</a></li>
+					<li><a href="mailto:kukkapallyvivek2828@gmail.com" class="text-blue-500 hover:underline">kukkapallyvivek2828@gmail.com</a></li>
+				</div>
+				<div class="flex items-center justify-center mt-4 space-x-4">
+					<a href="https://github.com/Vivek01999/" target="_blank" class="text-blue-500 hover:text-blue-700"><i class="fab fa-github fa-2x"></i></a>
+					<a href="https://linkedin.com/in/vivek-kukkapalli/" target="_blank" class="text-blue-500 hover:text-blue-700"><i class="fab fa-linkedin fa-2x"></i></a>
+					<a href="https://www.instagram.com/vivek._k__/" target="_blank" class="text-blue-500 hover:text-blue-700"><i class="fab fa-instagram fa-2x"></i></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- End Section -->
+
+
+	<div id="chat-button" class="fixed bottom-6 right-6 bg-blue-500 rounded-full p-4 cursor-pointer">
+        <i class="fas fa-comment fa-lg text-white"></i>
+    </div>
+
+    <!-- Contact Form -->
+    <div id="contact-form" class="hidden fixed bottom-20 right-6 bg-white p-8 shadow-md rounded-md">
 		<form action="">
-			<input type="name" placeholder="Your Name " required>
-			<input type="email" placeholder="Your Email " required>
-			<input type="number" placeholder="your Mobile Number" required>
-			<textarea name="" id="" cols="35" rows="10" placeholder="How Can I Help You " required></textarea>
-			<input type="submit" value="Send Message" class="submit" required>
+			<input type="name" placeholder="Your Name" required class="w-full bg-gray-100 p-3 mb-2 border border-gray-300 rounded-md">
+			<input type="email" placeholder="Your Email" required class="w-full bg-gray-100 p-3 mb-2 border border-gray-300 rounded-md">
+			<input type="number" placeholder="Your Mobile Number" required class="w-full bg-gray-100 p-3 mb-2 border border-gray-300 rounded-md">
+			<textarea name="" id="" cols="35" rows="5" placeholder="How Can I Help You" required class="w-full bg-gray-100 p-3 mb-2 border border-gray-300 rounded-md"></textarea>
+			<input type="submit" value="Send Message" class="btn bg-blue-500 text-white hover:bg-blue-600 py-2 px-4 rounded-md">
 		</form>
+    </div>
+	<!-- <section class="fixed bottom-6 right-6">
+		<div class="bg-blue-500 rounded-full p-2">
+			<a href="#home" class="text-white"><i class="fas fa-arrow-up fa-lg"></i></a>
+		</div>
+	</section> -->
 
-	</div>
-</section>
-
-<!---------End Section---------->
-<section class="end">
-	<div class="top">
-		<a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
-	</div>
-</section>
-
+	<!-- Font Awesome Icons -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+	<!-- Your custom script -->
+	<script src="script.js"></script>
 </body>
 
 </html>
